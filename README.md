@@ -22,8 +22,8 @@ Factors considered in the analysis included the following data for all borrowers
 
 <strong>Logistic Regression Model 1:</strong>
 
-* Precision: 93% (an average) The model predicted low-risk loans with 100% accuracy.  Conversely, the model's predictions for high-risk loans was 87% accurate.  
-* Accuracy: 94% 
+* Balanced accuracy score:  94.4%
+* Precision: 100% for healthy-loans and 87% for high-risk loans.  
 * Recall: 94% (an average) The model had 100% recall in predicting low-risk loans and 89% recall in predicting high-risk loans.
 
 ![Accuracy_score_test](./Images/Accuracy_score_test.png)
@@ -31,9 +31,9 @@ Factors considered in the analysis included the following data for all borrowers
 
 <strong>Logistic Regression Model 2:</strong>
 
-* Precision: 94% (an average) The model predicted low-risk loans with 100% accuracy.  Conversely, the model's predictions for high-risk loans was 87% accurate.
-* Accuracy: 100% 
-* Recall: 100%
+* Balanced accuracy score:  99.5%
+* Precision: 100% for healthy-loans and 87% for high-risk loans.  
+* Recall: 94% (an average) The model had 100% recall in predicting low-risk loans and 100% recall in predicting high-risk loans.
 
 ![Accuracy_score_resample](./Images/Accuracy_score_resample.png)
 ![classrpt_score_resample](./Images/classrpt_score_resample.png)
@@ -45,3 +45,5 @@ Overall, the machine learning model predicted credit risk fairly accurately. If 
 Comparatively, the second model had no improved accuracy performance for high-risk loans, again, 87% of the model's high-risk predictions were accurate. However, the balanced accuracy for the second model improved to 99.5%, as opposed to 94.4% for the first model.
 
 The first model may be good enough for an overall sound credit prediction, but the second model is better in all respects. I would recommend using the second model to assess risk levels of new loans.
+
+** Used stackoverflow to resolve module not found error for imblearn module: 'https://stackoverflow.com/questions/50376990/modulenotfounderror-no-module-named-imblearn'

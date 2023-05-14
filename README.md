@@ -3,7 +3,7 @@
   In this challenge, I employed the Machine Learning methods learned to analyze a dataset of a peer-to-peer lending service company and build models that can determine the creditworthiness of borrowers.  
 
 ## Overview of the Analysis  
-  Made up of 77,536 data points, the dataset was split into a training set and a test set. The training set was used to create an initial logistic regression model using the scikit-learn LogisticRegression module <a href=https://scikit-learn.org/stable/index.html>scikit-learn</a>. The logistic regression model 1 was then applied to the test dataset. The purpose of the model was to determine whether loans to borrowers in the test set were low-risk or high-risk. 
+  Made up of 77,536 data points, the dataset was split into a training set and a test set. The training set was used to create an initial logistic regression model using the <a href=https://scikit-learn.org/stable/index.html>scikit-learn</a> LogisticRegression module. The logistic regression model 1 was then applied to the test dataset. The purpose of the model was to determine whether loans to borrowers in the test set were low-risk or high-risk. 
 
   This original model was based on a dataset containing 75,036 data points for low-risk loans and 2,500 data points for high-risk loans. To resample the training data and ensure that the logistic regression model extracted the same number of data points, the training set data was resampled using the RandomOverSampler module. Based on the original dataset, 56,277 data points were generated for both low-risk (0) and high-risk (1) loans.
 
